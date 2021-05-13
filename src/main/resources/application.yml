@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://socar-dev-db.cluster-cbtgdmndtz4d.ap-northeast-2.rds.amazonaws.com:3306/socar_dev?characterEncoding=UTF-8&serverTimezone=Asia/Seoul&useSSL=false&zeroDateTimeBehavior=convertToNull
+    username: dev_app
+    password: appsocar12#$
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  batch:
+    job:
+      enabled: true
+
+logging:
+  level:
+    root: info
